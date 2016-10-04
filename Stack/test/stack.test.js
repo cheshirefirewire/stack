@@ -29,4 +29,12 @@ describe("Stack", () => {
 
         expect(stack.size()).to.equal(3);
     });
+
+    it("should return the last item added", () => {
+        let stack = new Stack();
+        stack.push(1);
+        stack.push(2);
+        expect(stack.peek()).to.equal(2);
+
+    });
 });

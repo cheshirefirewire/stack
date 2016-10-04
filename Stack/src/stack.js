@@ -15,6 +15,10 @@ class Stack{
     push(item){
         this.items.push(item);
     }
+
+    peek(){
+        return this.items[this.items.length-1];
+    }
 }
 
 export default Stack;
