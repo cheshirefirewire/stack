@@ -3,7 +3,7 @@
 import {expect} from "chai";
 import App from "../src/app.js";
 
-describe("App", () => {
+describe("App", () => { //function that gives you key value pair, key is what you are describing, arrow function
     it("shall exist", () => {
         let app = new App();
 
@@ -16,3 +16,10 @@ describe("App", () => {
         expect(app.run()).to.be.true;
     });
 });
+
+
+
+//these are roughly the same
+//function() {}
+//() => {} //handles this differently
+
